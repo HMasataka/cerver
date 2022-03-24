@@ -1,12 +1,15 @@
-class Router
+namespace Router
 {
-    static void Main(string[] args)
+    class Router
     {
-        var builder = WebApplication.CreateBuilder(args);
-        var app = builder.Build();
+        static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+            var app = builder.Build();
 
-        app.MapGet("/", () => "Hello World!");
+            app.MapGet("/", () => "Hello World!");
 
-        app.Run();
+            app.Run();
+        }
     }
 }
