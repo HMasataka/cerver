@@ -7,7 +7,7 @@ namespace Router
             var builder = WebApplication.CreateBuilder(args);
             var app = builder.Build();
 
-            app.MapGet("/", Application.Func.HelloWorld);
+            app.MapGet("/", Application.Application.HelloWorld);
 
             app.Run();
         }
